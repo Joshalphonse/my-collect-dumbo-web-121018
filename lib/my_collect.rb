@@ -1,11 +1,12 @@
 def my_collection(array)
-  i = 0 
-  empty = []
+i = 0 
+empty_array =[]
+while i < array.length
+empty_array << yield(array[i])
+i+=1
+end
+empty_array
+end
   
-  while i< array.length
-  res << yield(array[i])
-  i += 1
-end
-res
-end
+  
 
